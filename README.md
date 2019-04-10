@@ -355,7 +355,7 @@ updateOutline();
 
 5、写Markdown文件
 随便找个地方，建一个目录，可以在目录中建md文件，格式只对title部分有要求要求，下面是个例子
-```markdown
+```md
 ---
 title: JavaScript 中的强制转型（coercion）是指什么？
 ---
@@ -364,19 +364,19 @@ title: JavaScript 中的强制转型（coercion）是指什么？
 
 在 JavaScript 中，两种不同的内置类型间的转换被称为强制转型。强制转型在 JavaScript 中有两种形式：显式和隐式。
 这是一个显式强制转型的例子：
-```js
+
 var a = "42";
 var b = Number( a );
 a;                // "42"
 b;                // 42 -- 是个数字!
-```
+
 这是一个隐式强制转型的例子：
-```js
+
 var a = "42";
 var b = a * 1;    // "42" 隐式转型成 42 
 a;                // "42"
 b;                // 42 -- 是个数字!
-```
+
 ```
 
 
