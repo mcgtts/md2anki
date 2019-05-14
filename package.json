@@ -1,13 +1,19 @@
 {
   "name": "md2anki",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "将Markdown文档导入anki",
+  "main": "src/index.js",
+  "bin": {
+    "qscan": "./bin/md2anki"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "author": "gtts",
+  "license": "MIT",
   "dependencies": {
     "async": "^2.6.2",
     "axios": "^0.18.0",
