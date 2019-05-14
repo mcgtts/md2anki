@@ -386,7 +386,7 @@ b;                // 42 -- 是个数字!
 git clone git@github.com:mcgtts/md2anki.git
 cd md2anki 
 npm install
-node index.js md文件目录
+./bin/md2anki import -d md文件目录
 ```
 
 > 致谢
