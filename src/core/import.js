@@ -99,8 +99,8 @@ class Import extends EventEmitter {
     }
 
     __convertMd(mdData) {
-        require('../../lib/showdown-prettify.js');
-        var showdown = require('../../lib/showdown.js');
+        require('../static/lib/showdown-prettify.js');
+        var showdown = require('../static/lib/showdown.js');
 
         var markdownConverter = new showdown.Converter({extensions: ['prettify']});
 
@@ -129,7 +129,7 @@ class Import extends EventEmitter {
 
         var path = require('path');
 
-        var template_file = path.resolve(__dirname, '../../template2.html');
+        var template_file = path.resolve(__dirname, '../static/template2.html');
         var template = fs.readFileSync(template_file, "utf-8");
 
         // console.log(template); const $ = cheerio.load(template,{decodeEntities:
