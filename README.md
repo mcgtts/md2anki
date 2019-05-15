@@ -3,7 +3,8 @@
 不过anki 添加卡片效率不是很高，我平时写文档使用的是Markdown，所以我希望能把Markdown 一键导入到anki，这样能节省添加卡片的时间（事实上，如果没有这个工具，我是懒得去自己添加卡片的，不想干那种毫无技术含量却耗时耗力的事情）。
 
 ## 使用方式
-1、为anki添加AnkiConnect组件，这要就可以在本地通过api操作anki了
+1、为anki添加AnkiConnect组件，这样就可以在本地通过api操作anki了
+
 https://ankiweb.net/shared/info/2055492159
 
 2、下载代码
@@ -52,6 +53,10 @@ b;                // 42 -- 是个数字!
 ```sh
 ./bin/md2anki import -d md文件目录
 ```
+
+## TODO
+- [ ] 支持自定义Deck
+- [ ] 支持创建markdown文件
 
 > 致谢
 https://github.com/kanalun/markdown2html.git
