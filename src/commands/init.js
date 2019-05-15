@@ -1,14 +1,14 @@
 const Logger = require('../logger');
-const Import = require('../core/import')
+const Init = require('../core/init')
 
 module.exports = {
     usage: '[options]',
-    description: '导入Markdown 到anki里',
+    description: '初始化anki， 创建mode name',
     options: {
-        '-d, --directory <directory>': '配置md 的绝对路径'
+        '-m, --modeName <mode Name>': 'mode 名称'
     },
     action: (options) => {
-        new Import({
+        new Init({
             mdPath: options.directory || null
         }).run((err) => {
             if (err) {

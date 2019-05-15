@@ -4,10 +4,11 @@ const logger = require('../logger');
 const async = require('async');
 var fs = require("fs")
 var path = require("path")
+var axios = require("axios");
 
 const ankiNote = {
     "deckName": "职业::JS面试题",
-    "modelName": "基础-md2anki"
+    "modelName": "md2anki"
 }
 
 class Import extends EventEmitter {
@@ -73,7 +74,6 @@ class Import extends EventEmitter {
     }
 
     async __httpPost(option) {
-        var axios = require("axios");
 
         let self = this
         await axios
@@ -99,8 +99,8 @@ class Import extends EventEmitter {
     }
 
     __convertMd(mdData) {
-        require('../static/lib/showdown-prettify.js');
-        var showdown = require('../static/lib/showdown.js');
+        require('../static/card/lib/showdown-prettify.js');
+        var showdown = require('../static/card/lib/showdown.js');
 
         var markdownConverter = new showdown.Converter({extensions: ['prettify']});
 
@@ -129,7 +129,7 @@ class Import extends EventEmitter {
 
         var path = require('path');
 
-        var template_file = path.resolve(__dirname, '../static/template2.html');
+        var template_file = path.resolve(__dirname, '../static/card/template2.html');
         var template = fs.readFileSync(template_file, "utf-8");
 
         // console.log(template); const $ = cheerio.load(template,{decodeEntities:
