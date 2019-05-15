@@ -55,6 +55,8 @@ b;                // 42 -- 是个数字!
 ```
 
 ## TODO
+- [x] 导入指定目录的Markdown文件
+- [x] 自动生成Model
 - [ ] 支持自定义Deck
 - [ ] 支持创建markdown文件
 
