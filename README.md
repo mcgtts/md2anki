@@ -19,7 +19,7 @@ npm install
 ./bin/md2anki init
 ```
 
-4、回到anki首页，创建一个deck，比如叫”自定义Deck“，名称需要写到代码里
+4、回到anki首页，创建一个deck，比如叫”自定义Deck“，名称需要写到代码里（代码中搜索modelName可以找到）
 
 5、写Markdown文件
 随便找个地方，建一个目录，可以在目录中建md文件，格式只对title部分有要求要求，下面是个例子
